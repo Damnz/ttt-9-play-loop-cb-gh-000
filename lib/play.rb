@@ -7,6 +7,12 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
+def play(board)
+  9.times do
+    turn(board)
+  end
+end
+
 def input_to_index(user_input)
   user_input.to_i - 1
 end
